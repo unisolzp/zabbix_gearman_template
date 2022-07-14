@@ -1,0 +1,5 @@
+#!/bin/bash
+
+NAME=$1
+
+gearadmin --status | grep $NAME | awk '{print $2}'
